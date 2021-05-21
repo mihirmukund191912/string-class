@@ -1,0 +1,50 @@
+#include<iostream>
+using namespace sd;
+class string
+{ 
+private:
+string result;
+string s1, s2;
+
+public:
+string()
+{
+cout<<" this is a string class"<< endl;
+};
+void storestr();
+string concatstr();
+void compareste();
+void displaystr();
+};
+
+void string::storestr(){
+cout<<"enter string 1:"<<endl;
+cin>>s1;
+cout<<"enter sting 2:"<<endl;
+cin<<s2;
+}
+string string::concatstr(){
+result=s1+" " + s2;
+return result;
+}
+void strig::comparestr(){
+if(s1==s2)
+cout<<"both strings are equal"<<endl;
+else
+cout<<"strings entred are not equal"<<endl;
+}
+void string::displaystr(){
+cout<<"resulting string is:"<<result;
+}
+int main()
+{
+string mihir_str;
+string s1,s2;
+
+mihir_str.storestr();
+mihir_str.concatstr();
+mihir_str.comparestr();
+mihir_str.displaystr();
+
+return 0;
+}
